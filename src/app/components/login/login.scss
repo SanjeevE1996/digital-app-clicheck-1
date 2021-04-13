@@ -1,0 +1,70 @@
+.is-main-color {
+  background-color: hsl(203, 90%, 36%);
+}
+
+.login-section {
+  overflow-y: auto;
+  height: 100vh;
+
+  .box-login {
+    position: relative;
+    top: 300px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 18.75rem;
+    height: 20rem;
+    margin: 0px auto;
+    background-color: #fff;
+    border: 1px solid rgba(155, 155, 155, 1);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+
+    .img-center-holder {
+      position: relative;
+      width: 7.4rem;
+      height: 7.4rem;
+      left: 0px;
+      right: 0px;
+      top: 3.575rem;
+      bottom: 0px;
+      margin: 0px auto;
+      border-radius: 7.4rem;
+      border: 1px solid hsl(0, 0%, 86%);
+
+      .image-avatar {
+        height: 120px;
+      }
+    }
+
+    .login-holder {
+      position: absolute;
+      width: 100%;
+      top: 11rem;
+      padding-top: 1rem;
+      text-align: center;
+
+      .name {
+        position: relative;
+        color: hsl(0, 0%, 21%);
+        font-size: 1.25rem;
+      }
+
+      .btn-in {
+        position: relative;
+        top: 15px;
+        display: block;
+        font-size: 1rem;
+        width: 7.5rem;
+        height: 3.125rem;
+        margin: 0 auto;
+        background-color: #23d160;
+        color: white;
+        border-radius: 6.25rem;
+        font-weight: 700;
+        outline: none;
+        border: 0;
+      }
+    }
+  }
+}

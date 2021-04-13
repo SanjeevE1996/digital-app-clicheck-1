@@ -1,0 +1,122 @@
+$options_margin: 0.5rem;
+$options_height: 1.5rem;
+$options_by_column: 10;
+
+.columns {
+  margin: 0 !important;
+}
+
+.column {
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.select-types {
+  margin-bottom: 1rem !important;
+}
+
+select {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.multiselect-dropdown .dropdown-btn,
+select {
+  width: 100% !important;
+}
+
+.multiselect-dropdown.fraud-reason {
+  width: 100% !important;
+}
+
+.check-option {
+  margin-bottom: $options_margin;
+  height: $options_height;
+  font-size: 1rem;
+
+  label {
+    white-space: nowrap;
+  }
+
+  input[type="checkbox"] {
+    margin-right: $options_margin;
+  }
+}
+
+.buttons-container {
+  margin-top: 1.5rem;
+}
+
+button {
+  border-radius: 0.3rem;
+  cursor: pointer;
+  outline: none;
+  border: 0 solid;
+  white-space: nowrap;
+  padding: 0.7rem 0.9rem;
+  font-size: 1rem;
+
+  &.filter {
+    background: $cyan;
+    color: $white;
+    margin-right: 0.7rem;
+
+    &:disabled {
+      background: $grey-lighter;
+    }
+  }
+
+  &.cancel {
+    background: $white;
+    color: $black;
+  }
+}
+
+:host ::ng-deep .mat-form-field-infix {
+  border-top: 0.3em solid transparent;
+}
+:host ::ng-deep .mat-form-field-label {
+  top: 1.4rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.date-picker-container {
+  padding-right: 2rem !important;
+}
+
+.date-picker {
+  width: 100%;
+}
+
+.case-sub-types-container {
+  height: calc(
+    (#{$options_margin} + #{$options_height}) * #{$options_by_column}
+  );
+  flex-wrap: wrap;
+}
+
+.case-types-outer-container {
+  min-width: 12.5rem;
+}
+
+.case-sub-types-outer-container {
+  padding-left: 1rem;
+  border-left: 1px solid $grey-lighter;
+}
+
+.case-types-heading {
+  margin-bottom: $options_margin;
+}
+
+.in-fields-validations {
+  position: absolute;
+  margin-top: -1rem;
+}
